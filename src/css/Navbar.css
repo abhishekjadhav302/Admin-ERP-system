@@ -1,0 +1,137 @@
+/* General Reset for Margin and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Admin Dashboard Header Styling */
+.admin-dashboard-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+/* Logo in Admin Dashboard */
+.admin-dashboard-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.admin-dashboard-title {
+    font-size: 1.8rem;
+    color: #ecf0f1;
+    text-transform: uppercase;
+}
+
+/* Add hover effect on the title */
+.admin-dashboard-header:hover .admin-dashboard-logo {
+    transform: rotate(360deg);
+}
+
+/* Header Search Styling */
+.header-search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 37rem;
+}
+
+.header-search-input {
+    padding: 8px 15px;
+    
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.header-search-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header-search-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.header-search-input:focus {
+    width: 300px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #34495e;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 60px;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #1abc9c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-search {
+        margin-top: 10px;
+    }
+
+    .header-search-input {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}

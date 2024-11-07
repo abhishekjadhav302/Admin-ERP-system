@@ -1,0 +1,42 @@
+.staff-details {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: -20rem;
+}
+
+.staff-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.staff-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 280px;
+    transition: box-shadow 0.3s;
+}
+
+.staff-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.staff-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.staff-card p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.staff-card p strong {
+    color: #333;
+}
